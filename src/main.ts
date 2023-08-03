@@ -3,7 +3,11 @@ import { AppModule } from './app.module';
 import { Logger, ValidationPipe } from '@nestjs/common';
 import { TransformInterceptor } from './transform.interceptor';
 
+console.log(process.env.NODE);
+console.log(process.env.SOMETHING);
+
 async function bootstrap() {
+  /*
   const logger = new Logger();
   const app = await NestFactory.create(AppModule);
   app.useGlobalPipes(new ValidationPipe());
@@ -11,5 +15,6 @@ async function bootstrap() {
   const port = 3000;
   await app.listen(port);
   logger.log(`Application listening on port ${port}`);
+  */
 }
 bootstrap();
